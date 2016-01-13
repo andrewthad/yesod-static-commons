@@ -1,0 +1,32 @@
+name:                yesod-static-commons
+version:             0.1.0.0
+synopsis:            Common stylesheets and javascript libraries
+description:         Please see README.md
+homepage:            http://github.com/andrewthad/yesod-static-commons#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Andrew Martin
+maintainer:          andrew.thaddeus@gmail.com
+copyright:           2016 Andrew Martin
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  default-language:    Haskell2010
+  hs-source-dirs:      src
+  exposed-modules:     
+     Yesod.Static.Bootstrap
+   , Yesod.Static.Jquery
+   , Yesod.Static.Commons.Internal
+  build-depends:
+     base >= 4.7 && < 5
+   , yesod-core
+   , yesod-static
+  default-extensions:
+    TemplateHaskell
+
+source-repository head
+  type:     git
+  location: https://github.com/andrewthad/yesod-static-commons
