@@ -21,7 +21,7 @@ pickAColorField = Field
       provide app PickAColor
       [whamlet|
 $newline never
-<input class="form-control" type="text" value="{either id getColor val}" *{attrs} name="#{name}" id="#{theId}">
+<input class="form-control" type="text" value="#{either id getColor val}" *{attrs} name="#{name}" id="#{theId}">
 |]
       toWidget [julius|
 $().ready(function(){
