@@ -25,7 +25,7 @@ $newline never
 |]
       toWidget [julius|
 $().ready(function(){
-  $('##{rawJS theId}').pickAColor();
+  $('##{rawJS theId}').pickAColor({inlineDropdown:true});
 });
 |]
   , fieldEnctype = UrlEncoded
