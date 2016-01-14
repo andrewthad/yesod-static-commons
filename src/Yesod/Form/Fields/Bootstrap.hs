@@ -24,7 +24,9 @@ $newline never
 <input class="form-control" type="text" value="{either id getColor val}" *{attrs} name="#{name}" id="#{theId}">
 |]
       toWidget [julius|
-$('##{rawJS theId}').pickAColor();
+$().ready(function(){
+  $('##{rawJS theId}').pickAColor();
+});
 |]
   , fieldEnctype = UrlEncoded
   }
