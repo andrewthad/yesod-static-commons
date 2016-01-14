@@ -32,17 +32,19 @@ library
    , yesod-form
    , text
    , shakespeare
+   , persistent
   default-extensions:
-    TemplateHaskell
-    QuasiQuotes
-    DefaultSignatures
+    ConstraintKinds
     DataKinds
-    TypeOperators
+    DefaultSignatures
+    FlexibleContexts
+    GeneralizedNewtypeDeriving
     MultiParamTypeClasses
     PolyKinds
-    ConstraintKinds
+    QuasiQuotes
+    TemplateHaskell
     TypeFamilies
-    FlexibleContexts
+    TypeOperators
 
 source-repository head
   type:     git
