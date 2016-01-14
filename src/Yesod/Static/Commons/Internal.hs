@@ -5,4 +5,3 @@ import           Yesod.EmbeddedStatic.Generators (embedDir)
 
 mkEmbeddedStatic False "commons" [embedDir "resources"]
 
-

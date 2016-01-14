@@ -97,3 +97,5 @@ language_extensions:
     - TupleSections
     - TypeFamilies
     - ViewPatterns
+    - DataKinds
+    - DefaultSignatures

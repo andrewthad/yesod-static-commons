@@ -19,13 +19,30 @@ library
   exposed-modules:     
      Yesod.Static.Bootstrap
    , Yesod.Static.Jquery
+   , Yesod.Static.PickAColor
+   , Yesod.Static.TinyColor
    , Yesod.Static.Commons.Internal
+   , Yesod.Static.Commons
+   , Yesod.Form.Fields.Bootstrap
+   , Yesod.Form.Fields.Bootstrap.Types
   build-depends:
      base >= 4.7 && < 5
    , yesod-core
    , yesod-static
+   , yesod-form
+   , text
+   , shakespeare
   default-extensions:
     TemplateHaskell
+    QuasiQuotes
+    DefaultSignatures
+    DataKinds
+    TypeOperators
+    MultiParamTypeClasses
+    PolyKinds
+    ConstraintKinds
+    TypeFamilies
+    FlexibleContexts
 
 source-repository head
   type:     git
