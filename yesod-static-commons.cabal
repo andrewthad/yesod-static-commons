@@ -20,6 +20,7 @@ library
      Yesod.Static.Bootstrap
    , Yesod.Static.Jquery
    , Yesod.Static.PickAColor
+   , Yesod.Static.MaterialDesignLite
    , Yesod.Static.TinyColor
    , Yesod.Static.Commons.Internal
    , Yesod.Static.Commons
@@ -45,6 +46,7 @@ library
     TemplateHaskell
     TypeFamilies
     TypeOperators
+    OverloadedStrings
 
 source-repository head
   type:     git
